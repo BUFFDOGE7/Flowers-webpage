@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Our Blooms®</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Fraunces', 'serif'],
+                        body: ['DM Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        bloom: {
+                            black: '#1e1b18',
+                            yellow: '#f5c800',
+                            soft: '#f7f4f0',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-body text-bloom-black overflow-x-hidden">
+
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300">
+        <div class="max-w-screen-xl mx-auto px-8 py-4 flex items-center justify-between border-b border-gray-200">
+            <a href="index.html" class="font-display font-bold text-xl tracking-tight text-bloom-black">Our Blooms®</a>
+            <ul class="flex items-center gap-10">
+                <li><a href="gallery.html" class="nav-link nav-active text-xs font-semibold tracking-widest uppercase text-bloom-black">Gallery</a></li>
+                <li><a href="about.html" class="nav-link text-xs font-semibold tracking-widest uppercase text-bloom-black hover:opacity-60 transition-opacity">About</a></li>
+                <li><a href="index.html#contact" class="nav-link text-xs font-semibold tracking-widest uppercase text-bloom-black hover:opacity-60 transition-opacity">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="pt-28 pb-10 max-w-screen-xl mx-auto px-8">
+        <h1 class="font-body font-black text-5xl md:text-6xl uppercase tracking-tight text-bloom-black fade-up">Gallery</h1>
+    </section>
+
+    <section class="max-w-screen-xl mx-auto px-8 pb-20">
+        <div class="grid grid-cols-[120px_1fr] gap-x-12 items-start">
+            <div class="fade-up pt-1">
+                <p class="text-xs font-semibold tracking-widest uppercase text-gray-400 leading-tight">Seasonal<br>Arrangements</p>
+            </div>
+            <div class="grid grid-cols-3 gap-x-4 gap-y-10">
+
+                <div class="product-card group cursor-pointer fade-up">
+                    <p class="text-xs font-black uppercase tracking-widest text-bloom-black mb-2">Dawn Bloom <span class="font-normal text-gray-400 normal-case">$55/Bunch</span></p>
+                    <div class="rounded-2xl overflow-hidden aspect-square bg-gray-50">
+                        <img src="assets/Image-5.png" alt="Dawn Bloom" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <div class="product-card group cursor-pointer fade-up delay-1">
+                    <p class="text-xs font-black uppercase tracking-widest text-bloom-black mb-2">Solstice Stems <span class="font-normal text-gray-400 normal-case">$30/Bunch</span></p>
+                    <div class="rounded-2xl overflow-hidden aspect-square bg-gray-50">
+                        <img src="assets/Image 03.png" alt="Solstice Stems" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <div class="product-card group cursor-pointer fade-up delay-2">
+                    <p class="text-xs font-black uppercase tracking-widest text-bloom-black mb-2">Whisper Greens <span class="font-normal text-gray-400 normal-case">$120/Bunch</span></p>
+                    <div class="rounded-2xl overflow-hidden aspect-square bg-gray-50">
+                        <img src="assets/Image-3.png" alt="Whisper Greens" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <div class="product-card group cursor-pointer fade-up">
+                    <p class="text-xs font-black uppercase tracking-widest text-bloom-black mb-2">Clarity Petals <span class="font-normal text-gray-400 normal-case">$55/Bunch</span></p>
+                    <div class="rounded-2xl overflow-hidden aspect-square bg-gray-50">
+                        <img src="assets/Image 01.png" alt="Clarity Petals" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <div class="product-card group cursor-pointer fade-up delay-1">
+                    <p class="text-xs font-black uppercase tracking-widest text-bloom-black mb-2">River Stone <span class="font-normal text-gray-400 normal-case">$30/Bunch</span></p>
+                    <div class="rounded-2xl overflow-hidden aspect-square bg-gray-50">
+                        <img src="assets/Image 02.png" alt="River Stone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <div class="product-card group cursor-pointer fade-up delay-2">
+                    <p class="text-xs font-black uppercase tracking-widest text-bloom-black mb-2">Moonlit Meadow <span class="font-normal text-gray-400 normal-case">$120/Bunch</span></p>
+                    <div class="rounded-2xl overflow-hidden aspect-square bg-gray-50">
+                        <img src="assets/Image-7.png" alt="Moonlit Meadow" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <div class="product-card group cursor-pointer fade-up">
+                    <p class="text-xs font-black uppercase tracking-widest text-bloom-black mb-2">Ember Leaf <span class="font-normal text-gray-400 normal-case">$55/Bunch</span></p>
+                    <div class="rounded-2xl overflow-hidden aspect-square bg-gray-50">
+                        <img src="assets/Image-6.png" alt="Ember Leaf" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <div class="product-card group cursor-pointer fade-up delay-1">
+                    <p class="text-xs font-black uppercase tracking-widest text-bloom-black mb-2">Skyline Bloom <span class="font-normal text-gray-400 normal-case">$75/Bunch</span></p>
+                    <div class="rounded-2xl overflow-hidden aspect-square bg-gray-50">
+                        <img src="assets/Image-8.png" alt="Skyline Bloom" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <div class="product-card group cursor-pointer fade-up delay-2">
+                    <p class="text-xs font-black uppercase tracking-widest text-bloom-black mb-2">Still Waters <span class="font-normal text-gray-400 normal-case">$250/Bunch</span></p>
+                    <div class="rounded-2xl overflow-hidden aspect-square bg-gray-50">
+                        <img src="assets/Image-2.png" alt="Still Waters" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-screen-xl mx-auto px-8 pb-20">
+        <hr class="border-gray-200 mb-16">
+        <div class="grid grid-cols-[120px_1fr] gap-x-12 items-start fade-up">
+            <p class="text-xs font-semibold tracking-widest uppercase text-gray-400 pt-1">Services</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+
+                <div class="fade-up">
+                    <h2 class="font-body font-black text-2xl uppercase tracking-tight text-bloom-black mb-3">Floral Installations</h2>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">We create clean, contemporary designs that elevate any environment, from intimate gatherings to grand events.</p>
+                    <div class="rounded-2xl overflow-hidden">
+                        <img src="assets/Image1.png" alt="Floral installation" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+
+                <div class="fade-up delay-1">
+                    <h2 class="font-body font-black text-2xl uppercase tracking-tight text-bloom-black mb-3">Native Plant Arrangements</h2>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">Our selection of locally sourced flora brings natural resilience and effortless elegance to your home.</p>
+                    <div class="rounded-2xl overflow-hidden">
+                        <img src="assets/Image-1.png" alt="Native plant arrangement" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+
+                <div class="fade-up delay-2 md:col-span-2 max-w-md">
+                    <h2 class="font-body font-black text-2xl uppercase tracking-tight text-bloom-black mb-3">Custom Floral Concepts</h2>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">Your vision, our blooms. We build arrangements that are both personal and exquisitely simple.</p>
+                    <div class="rounded-2xl overflow-hidden">
+                        <img src="assets/Image-2.png" alt="Custom floral concept" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 text-center fade-up">
+        <div class="max-w-xl mx-auto px-8">
+            <p class="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-5">Work With Us</p>
+            <h2 class="font-display font-bold text-4xl md:text-5xl text-bloom-black leading-tight mb-10">
+                Discover how we can add a touch of natural beauty to your next event.
+            </h2>
+            <a href="index.html#contact" class="pill-btn inline-flex items-center gap-2 bg-bloom-yellow text-bloom-black text-xs font-bold tracking-widest uppercase px-6 py-3 rounded-full hover:bg-yellow-400 transition-colors">
+                <span class="w-1.5 h-1.5 bg-bloom-black rounded-full"></span>
+                About Us
+            </a>
+        </div>
+    </section>
+
+    <footer id="contact" class="mx-6 mb-6 rounded-3xl overflow-hidden relative min-h-[520px]">
+        <img src="assets/Image-4.png" alt="Our Blooms footer" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-10 flex flex-col justify-between h-full min-h-[520px] p-10">
+            <div></div>
+            <div></div>
+            <div class="flex items-end justify-between">
+                <p class="text-white text-sm font-medium">Miami, FL</p>
+                <a href="mailto:hello@ourblooms.com" class="text-white text-sm font-medium hover:underline">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

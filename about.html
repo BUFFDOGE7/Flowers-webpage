@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Our Blooms®</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Fraunces', 'serif'],
+                        body: ['DM Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        bloom: {
+                            black: '#1e1b18',
+                            yellow: '#f5c800',
+                            soft: '#f7f4f0',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-body text-bloom-black overflow-x-hidden">
+
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300">
+        <div class="max-w-screen-xl mx-auto px-8 py-4 flex items-center justify-between border-b border-gray-200">
+            <a href="index.html" class="font-display font-bold text-xl tracking-tight text-bloom-black">Our Blooms®</a>
+            <ul class="flex items-center gap-10">
+                <li><a href="gallery.html" class="nav-link text-xs font-semibold tracking-widest uppercase text-bloom-black hover:opacity-60 transition-opacity">Gallery</a></li>
+                <li><a href="about.html" class="nav-link nav-active text-xs font-semibold tracking-widest uppercase text-bloom-black">About</a></li>
+                <li><a href="index.html#contact" class="nav-link text-xs font-semibold tracking-widest uppercase text-bloom-black hover:opacity-60 transition-opacity">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="pt-28 pb-10 max-w-screen-xl mx-auto px-8">
+        <h1 class="font-body font-black text-5xl md:text-6xl uppercase tracking-tight text-bloom-black fade-up">About</h1>
+    </section>
+
+    <section class="max-w-screen-xl mx-auto px-8 pb-16">
+        <div class="flex flex-wrap items-start gap-x-16 gap-y-6 fade-up">
+            <p class="text-xs font-semibold tracking-widest uppercase text-gray-400 pt-1 shrink-0">Our Story</p>
+            <div class="shrink-0">
+                <div class="rounded-2xl overflow-hidden w-60">
+                    <img src="assets/Image.png" alt="Lily Smith holding flowers" class="w-full h-72 object-cover object-top">
+                </div>
+            </div>
+            <div class="fade-up delay-1">
+                <p class="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-1">Lily Smith</p>
+                <p class="text-xs text-gray-400">Owner</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-screen-xl mx-auto px-8 pb-12 fade-up">
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-bloom-black leading-snug max-w-2xl">
+            Our Blooms was founded in honor of Lily Smith's loving aunts, Teresa and Beth.
+        </h2>
+    </section>
+
+    <section class="max-w-screen-xl mx-auto px-8 pb-12 fade-up">
+        <div class="grid grid-cols-3 gap-4 mb-12">
+            <div class="rounded-2xl overflow-hidden aspect-square">
+                <img src="assets/Image 01.png" alt="Pink peonies in vase" class="w-full h-full object-cover">
+            </div>
+            <div class="rounded-2xl overflow-hidden aspect-square">
+                <img src="assets/Image 02.png" alt="Crimson peony" class="w-full h-full object-cover">
+            </div>
+            <div class="rounded-2xl overflow-hidden aspect-square">
+                <img src="assets/Image 03.png" alt="White tulip" class="w-full h-full object-cover">
+            </div>
+        </div>
+        <div class="max-w-lg fade-up delay-1">
+            <p class="text-base text-bloom-black leading-relaxed mb-5">
+                Lily's journey with flowers began in the heart of Oregon, amidst the flourishing fields of her aunts' flower farm. It was there, surrounded by the abundance of nature, that she discovered her passion for floral design. From learning the names of each bloom to understanding the delicate balance of a bouquet, she absorbed the artistry of flowers like the rich Oregon soil.
+            </p>
+            <p class="text-base text-bloom-black leading-relaxed">
+                Bloom & Co. is the expression of that lifelong passion, a place where her love for flowers translates into beautifully curated arrangements that bring joy and elegance to your spaces.
+            </p>
+        </div>
+    </section>
+
+    <section class="max-w-screen-xl mx-auto px-8 pb-12 fade-up">
+        <div class="rounded-2xl overflow-hidden">
+            <img src="assets/Image breaker.png" alt="Pink tulips" class="w-full h-64 md:h-80 object-cover">
+        </div>
+    </section>
+
+    <section class="max-w-screen-xl mx-auto px-8 pb-20 fade-up">
+        <div class="max-w-lg">
+            <p class="text-base text-bloom-black leading-relaxed mb-5">
+                From humble beginnings, Bloom&Co has grown into a beloved local destination, known for its artistic arrangements, personal service, and commitment to quality.
+            </p>
+            <p class="text-base text-bloom-black leading-relaxed mb-10">
+                Discover how we can add a touch of natural beauty to your next event.
+            </p>
+            <a href="index.html#contact" class="pill-btn inline-flex items-center gap-2 bg-bloom-yellow text-bloom-black text-xs font-bold tracking-widest uppercase px-6 py-3 rounded-full hover:bg-yellow-400 transition-colors">
+                <span class="w-1.5 h-1.5 bg-bloom-black rounded-full"></span>
+                Book a Consultation
+            </a>
+        </div>
+    </section>
+
+    <footer id="contact" class="mx-6 mb-6 rounded-3xl overflow-hidden relative min-h-[520px]">
+        <img src="assets/Image-4.png" alt="Our Blooms footer" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-10 flex flex-col justify-between h-full min-h-[520px] p-10">
+            <div></div>
+            <div></div>
+            <div class="flex items-end justify-between">
+                <p class="text-white text-sm font-medium">Miami, FL</p>
+                <a href="mailto:hello@ourblooms.com" class="text-white text-sm font-medium hover:underline">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

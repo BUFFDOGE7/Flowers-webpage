@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blooms®</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Fraunces', 'serif'],
+                        body: ['DM Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        bloom: {
+                            black: '#1e1b18',
+                            yellow: '#f5c800',
+                            soft: '#f7f4f0',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-body text-bloom-black overflow-x-hidden">
+
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300">
+        <div class="max-w-screen-xl mx-auto px-8 py-4 flex items-center justify-between border-b border-gray-200">
+            <a href="index.html" class="font-display font-bold text-xl tracking-tight text-bloom-black">Our Blooms®</a>
+            <ul class="flex items-center gap-10">
+                <li><a href="gallery.html" class="nav-link text-xs font-semibold tracking-widest uppercase text-bloom-black hover:opacity-60 transition-opacity">Gallery</a></li>
+                <li><a href="about.html" class="nav-link text-xs font-semibold tracking-widest uppercase text-bloom-black hover:opacity-60 transition-opacity">About</a></li>
+                <li><a href="#contact" class="nav-link text-xs font-semibold tracking-widest uppercase text-bloom-black hover:opacity-60 transition-opacity">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" class="pt-20">
+        <div class="max-w-screen-xl mx-auto px-8 pt-10">
+            <h1 class="font-display font-black text-[clamp(4rem,10vw,8.5rem)] leading-none tracking-tight text-bloom-black fade-up">
+                Our Blooms<sup>®</sup>
+            </h1>
+        </div>
+        <div class="max-w-screen-xl mx-auto px-8 mt-4 relative">
+            <div class="rounded-2xl overflow-hidden h-[70vh] min-h-[480px] relative fade-up delay-1">
+                <img src="assets/Image-5.png" alt="Pink peony in a glass bottle" class="w-full h-full object-cover object-top">
+                <div class="absolute bottom-8 left-8">
+                    <div class="badge-stamp bg-bloom-yellow text-bloom-black flex flex-col items-center justify-center w-36 h-36 rounded-full font-body font-bold text-center shadow-lg">
+                        <span class="text-xs font-semibold tracking-widest uppercase mb-0.5">New</span>
+                        <span class="text-lg font-bold leading-tight">10% Off Your</span>
+                        <span class="text-lg font-bold leading-tight">First Order</span>
+                        <span class="text-[10px] font-semibold tracking-widest uppercase mt-0.5">Special</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-28 text-center fade-up">
+        <div class="max-w-2xl mx-auto px-8">
+            <p class="text-xs font-semibold tracking-widest uppercase text-bloom-black mb-6">Who We Are</p>
+            <h2 class="font-display font-bold text-4xl md:text-5xl text-bloom-black leading-tight mb-10">
+                We're Our Blooms<sup>®</sup> and we're here to help you find your floral story.
+            </h2>
+            <a href="about.html" class="pill-btn inline-flex items-center gap-2 bg-bloom-yellow text-bloom-black text-xs font-bold tracking-widest uppercase px-6 py-3 rounded-full hover:bg-yellow-400 transition-colors">
+                <span class="w-1.5 h-1.5 bg-bloom-black rounded-full"></span>
+                About Us
+            </a>
+        </div>
+    </section>
+
+    <section class="pb-24">
+        <div class="gallery-strip flex gap-4 px-8 overflow-x-auto scroll-smooth pb-2">
+            <div class="gallery-card flex-none w-[180px] h-[280px] rounded-2xl overflow-hidden bg-pink-50">
+                <img src="assets/Image-8.png" alt="Deep pink peony" class="w-full h-full object-cover">
+            </div>
+            <div class="gallery-card flex-none w-[300px] h-[280px] rounded-2xl overflow-hidden bg-gray-50">
+                <img src="assets/Image 03.png" alt="White tulip" class="w-full h-full object-cover">
+            </div>
+            <div class="gallery-card flex-none w-[300px] h-[280px] rounded-2xl overflow-hidden bg-pink-50">
+                <img src="assets/Image 01.png" alt="Pink peonies" class="w-full h-full object-cover">
+            </div>
+            <div class="gallery-card flex-none w-[300px] h-[280px] rounded-2xl overflow-hidden bg-stone-100">
+                <img src="assets/Image-6.png" alt="Dried flower buds" class="w-full h-full object-cover">
+            </div>
+            <div class="gallery-card flex-none w-[300px] h-[280px] rounded-2xl overflow-hidden bg-indigo-50">
+                <img src="assets/Image-7.png" alt="Hyacinth stem" class="w-full h-full object-cover object-right">
+            </div>
+            <div class="gallery-card flex-none w-[180px] h-[280px] rounded-2xl overflow-hidden bg-rose-50">
+                <img src="assets/Image 02.png" alt="Crimson peony" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-4">
+        <div class="max-w-screen-xl mx-auto px-8">
+            <div class="text-center mb-12 fade-up">
+                <h2 class="font-body font-black text-4xl md:text-5xl tracking-tight uppercase text-bloom-black">What We Do</h2>
+                <p class="mt-4 text-base text-gray-500">We bring a touch of that simple magic into your world.</p>
+            </div>
+
+            <div class="service-item border-t border-gray-200 py-16 fade-up">
+                <div class="flex flex-col items-center gap-6">
+                    <span class="font-display font-black text-6xl text-bloom-black">1</span>
+                    <div class="w-36 h-36 rounded-2xl overflow-hidden shadow-md">
+                        <img src="assets/Image1.png" alt="Floral installation" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center max-w-lg">
+                        <h3 class="font-body font-black text-2xl md:text-3xl tracking-tight uppercase text-bloom-black mb-3">Floral Installations</h3>
+                        <p class="text-gray-500 text-base leading-relaxed">Living art for homes, businesses, and events.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-item border-t border-gray-200 py-16 fade-up">
+                <div class="flex flex-col items-center gap-6">
+                    <span class="font-display font-black text-6xl text-bloom-black">2</span>
+                    <div class="w-36 h-36 rounded-2xl overflow-hidden shadow-md">
+                        <img src="assets/Image-1.png" alt="Native plant arrangements" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center max-w-lg">
+                        <h3 class="font-body font-black text-2xl md:text-3xl tracking-tight uppercase text-bloom-black mb-3">Native Plant Arrangements</h3>
+                        <p class="text-gray-500 text-base leading-relaxed">Whether it's a private retreat or a public space, we craft floral experiences that bloom beyond expectations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-item border-t border-b border-gray-200 py-16 fade-up">
+                <div class="flex flex-col items-center gap-6">
+                    <span class="font-display font-black text-6xl text-bloom-black">3</span>
+                    <div class="w-36 h-36 rounded-2xl overflow-hidden shadow-md">
+                        <img src="assets/Image-2.png" alt="Custom floral concepts" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center max-w-lg">
+                        <h3 class="font-body font-black text-2xl md:text-3xl tracking-tight uppercase text-bloom-black mb-3">Custom Floral Concepts</h3>
+                        <p class="text-gray-500 text-base leading-relaxed">Your vision, our blooms. We build arrangements that are both personal and exquisitely simple.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-28 text-center fade-up">
+        <div class="max-w-2xl mx-auto px-8">
+            <p class="text-xs font-semibold tracking-widest uppercase text-bloom-black mb-5">Work With Us</p>
+            <h2 class="font-display font-bold text-4xl md:text-5xl text-bloom-black leading-tight mb-10">
+                Discover how we can add a touch of natural beauty to your next event.
+            </h2>
+            <a href="about.html" class="pill-btn inline-flex items-center gap-2 bg-bloom-yellow text-bloom-black text-xs font-bold tracking-widest uppercase px-6 py-3 rounded-full hover:bg-yellow-400 transition-colors">
+                <span class="w-1.5 h-1.5 bg-bloom-black rounded-full"></span>
+                About Us
+            </a>
+        </div>
+    </section>
+
+    <footer id="contact" class="mx-6 mb-6 rounded-3xl overflow-hidden relative min-h-[520px]">
+        <img src="assets/Image-4.png" alt="Our Blooms footer" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-10 flex flex-col justify-between h-full min-h-[520px] p-10">
+            <div></div>
+            <div></div>
+            <div class="flex items-end justify-between">
+                <p class="text-white text-sm font-medium">Miami, FL</p>
+                <a href="mailto:hello@ourblooms.com" class="text-white text-sm font-medium hover:underline">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
